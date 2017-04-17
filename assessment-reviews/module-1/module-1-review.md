@@ -26,18 +26,25 @@ Semantic HTML is used to emphasize the meaning of the information on the webpage
 
 1. Write a paragraph tag with a class of "highlight" and content "Watch out!".
 
+'''
 <p class="highlight">Watch out!</p>
+'''
 
 2. Write an HTML image tag to show an image called `profile-picture.jpg`.
 
+'''
 <img src=`profile-picture.jpg`>
+'''
 
 3. Write a link tag that links to http://google.com.
 
+'''
 <a href="http://google.com">google</a>
+'''
 
 5. Write an complete standard HTML document outline (including a DOCTYPE, and `<html>`, `<head>`, and `<body>` tags).
 
+'''
 <!DOCTYPE html>
 <html>
   <head>
@@ -52,6 +59,7 @@ Semantic HTML is used to emphasize the meaning of the information on the webpage
     <script src="main.js"></script>
   </body>
 </html>
+'''
 
 6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`.
 7. Inside of the code for the previous exercise, write the appropriate tag to link to a stylesheet file called `main.css`.
@@ -88,9 +96,11 @@ Margin is the outermost box and clears the area from the border to the end of th
 
 1. Write a CSS rule to make the text of all `h1` tags red.
 
+'''
 h1 {
   color: red;
 }
+'''
 
 2. Write a CSS rule to make the background color of the link with `class="btn"` blue:
 
@@ -138,32 +148,32 @@ An array is a type of JavaScript object that stores an indexed list of data.
 ### Exercises
 
 1. Write a line that declares a variable called `myName` and set its value to your name.
-
+'''
 var myName = "Dawna";
-
+'''
 2. Write a loop that logs the numbers 1 through 10 to the console.
-
+'''
 for (var i = 0; i > 10; i++) {
   console.log("Number " + i);
 }
-
+'''
 3. Translate the following pseudocode into JavaScript: if `score` is greater than `3` and `lives` is greater than `0`, alert "You win!".
-
+'''
 var score = 7;
 var lives = 2;
 
 if (score > 3 && lives > 0) {
   alert("You Win!");
 }
-
+'''
 4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, 'name'!" to the console. Then, call the function below the function definition and pass in your name as the argument.
-
+'''
 var sayHello = function(name) {
   console.log("Hello, " + name + "!");
 }
 
 sayHello("Dawna");
-
+'''
 5. What would the following script log to the console?
 
   ```javascript
@@ -213,19 +223,19 @@ Friday, Friday
   Hello Sarah! Goodbye Sarah!
 
 8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
-
+'''
 var findLongestWord = function([]) {
 
 }
-
+'''
 9. Define a function `sum()` that sums all the numbers in an array of numbers. For example, `sum([1,2,3,4])` should return 10.
-
+'''
 var sum = function([a, b, c, d]) {
   return a + b + c + d;
 }
-
+'''
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
-
+'''
 var character = function([]) {
   if (["a", "e", "i", "o", "u"]) {
     return true;
@@ -233,7 +243,7 @@ var character = function([]) {
   return false;
   }
 }
-
+'''
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
 
   ```javascript
