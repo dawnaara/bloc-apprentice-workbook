@@ -148,32 +148,40 @@ An array is a type of JavaScript object that stores an indexed list of data.
 ### Exercises
 
 1. Write a line that declares a variable called `myName` and set its value to your name.
-'''
+
+```javascript
 var myName = "Dawna";
-'''
+```
+
 2. Write a loop that logs the numbers 1 through 10 to the console.
-'''
+
+```javascript
 for (var i = 0; i > 10; i++) {
   console.log("Number " + i);
 }
-'''
+```
+
 3. Translate the following pseudocode into JavaScript: if `score` is greater than `3` and `lives` is greater than `0`, alert "You win!".
-'''
+
+```javascript
 var score = 7;
 var lives = 2;
 
 if (score > 3 && lives > 0) {
   alert("You Win!");
 }
-'''
+```
+
 4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, 'name'!" to the console. Then, call the function below the function definition and pass in your name as the argument.
-'''
+
+```javascript
 var sayHello = function(name) {
   console.log("Hello, " + name + "!");
 }
 
 sayHello("Dawna");
-'''
+```
+
 5. What would the following script log to the console?
 
   ```javascript
@@ -199,8 +207,8 @@ Friday, Friday
   var result = add(3, 7);
 
   console.log(result);
-  ```
   10
+  ```
 
 7. What would the following script log to the console?
 
@@ -224,18 +232,31 @@ Friday, Friday
 
 8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
 
-var findLongestWord = function([]) {
-
+```javascript
+var findLongestWord = function(words) {
+  var longestWordLength = 0;
+  
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].length > longestWordLength) {
+      longestWordLength = words[i].length;
+    }
+  }
+  
+  return longestWordLength;
 }
-'''
+```
+
 9. Define a function `sum()` that sums all the numbers in an array of numbers. For example, `sum([1,2,3,4])` should return 10.
-'''
+
+```javascript
 var sum = function([a, b, c, d]) {
   return a + b + c + d;
 }
-'''
+```
+
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 
+```javascript
 function character(string) {
   if (string === "a" || string === "e" || string === "i" || string === "o" || string === "u") {
     return true;
@@ -243,6 +264,7 @@ function character(string) {
     return false;
   }
 }
+```
 
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
 
