@@ -223,7 +223,7 @@ Friday, Friday
   Hello Sarah! Goodbye Sarah!
 
 8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
-'''
+
 var findLongestWord = function([]) {
 
 }
@@ -235,15 +235,15 @@ var sum = function([a, b, c, d]) {
 }
 '''
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
-'''
-var character = function([]) {
-  if (["a", "e", "i", "o", "u"]) {
+
+function character(string) {
+  if (string === "a" || string === "e" || string === "i" || string === "o" || string === "u") {
     return true;
   } else {
-  return false;
+    return false;
   }
 }
-'''
+
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
 
   ```javascript
